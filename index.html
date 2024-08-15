@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Order System</h1>
+
+  <form id="order-form">
+    <fieldset>
+      <legend>Catalog</legend>
+      <table id="catalog">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chair</td>
+            <td>$25.50</td>
+          </tr>
+          <tr>
+            <td>Recliner</td>
+            <td>$37.75</td>
+          </tr>
+          <tr>
+            <td>Table</td>
+            <td>$49.95</td>
+          </tr>
+          <tr>
+            <td>Umbrella</td>
+            <td>$24.89</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <button type="button" id="make-purchase">Make a Purchase</button>
+  </form>
+
+  <div id="results" class="hidden">
+    <h2>Invoice</h2>
+    <div id="invoice-container">
+      <div id="invoice-details">
+        <!-- Invoice details will be dynamically inserted here -->
+      </div>
+      <hr class="invoice-separator">
+      <div id="invoice-transaction">
+        <!-- Transaction details will be dynamically inserted here -->
+      </div>
+    </div>
+    <button type="button" id="shop-again" class="center">Shop Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
